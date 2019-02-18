@@ -1,0 +1,148 @@
+@import 'variables.scss';
+@import 'smallResolution.scss';
+
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 10%;
+    background-color: $darkBlue;
+    h3,
+    h4 {
+        font-family: $subtitle;
+        text-align: center;
+    }
+    h3 {
+        color: $darkBlue;
+        font-size: 3.5vw; 
+        
+        text-shadow: 1px 1px $blue,
+        2px 2px $blue,
+        3px 3px $blue,
+        4px 4px $blue,
+        5px 5px $blue;
+    }
+    h4 {
+        color: $gray;
+        font-size: 2.5vw;
+    }
+    p {
+        font-family: $text;
+        font-size: 2vw;
+        color: $brown;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: $darkBlue;
+        &:hover{
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+    .contact {
+        display: none;
+        }
+    .me {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        font-family: $title;
+
+        .name{
+            margin: .2em auto .2em auto;
+            text-align: center;
+            color: $blue;
+            font-size: 12vw;
+            text-shadow: 1px 1px $pink,
+                        2px 2px $pink,
+                        3px 3px $pink,
+                        4px 4px $pink,
+                        5px 5px $pink;
+        }
+        .job {
+            text-align: center;
+            margin:.2em auto .4em auto;
+            text-shadow: none;
+            color: $pink;
+            font-size: 4.3vw;
+            font-style: italic;
+            font-family: $subtitle;
+            border-bottom: solid .1em $blue;
+        }
+    }
+    .paper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 70%;
+        padding: 1em;
+        background-color: $pink;
+        border-radius: 5px;
+        box-shadow: $blue 4px 4px, 
+                    $pink 8px 8px,
+                    $blue 12px 12px,
+                    $pink 16px 16px;
+        .about {
+            margin: 0 auto;
+        }
+        section {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            .xp {
+                display: flex;
+                .education {
+                    flex: 50%;
+                    border-right: solid $darkBlue .1em;               
+                }
+                .work {
+                    flex: 50%;
+                }
+             }
+             .skill {
+                 width: 70%;
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: center;
+                 h3 {
+                     flex: 100%;
+                     border: solid .07em;
+                     margin: 0 auto;                    
+                 }
+                 div{
+                     display: flex;
+                     p {
+                         flex: 50%;
+                     }
+                     .point{
+                         flex: 50%;
+                         color: $darkBlue;
+                     }
+                 }
+                 .front {
+                     display: flex;
+                     flex-flow: column;
+                     order: 1;
+                     flex: 100%;
+                 }
+                 .back {
+                     display: flex;
+                     flex-flow: column;
+                     order: 2;
+                     flex: 100%;
+                 }
+                 .tool {
+                     order: 3;
+                     flex: 100%;
+                 }
+             }
+     
+             .interest {
+     
+             }
+        }
+        
+    }
+}

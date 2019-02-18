@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 10%;
+  background-color: #3b65cc; }
+  body h3,
+  body h4 {
+    font-family: "Aleo", serif;
+    text-align: center; }
+  body h3 {
+    color: #3b65cc;
+    font-size: 3.5vw;
+    text-shadow: 1px 1px #d2f0ff, 2px 2px #d2f0ff, 3px 3px #d2f0ff, 4px 4px #d2f0ff, 5px 5px #d2f0ff; }
+  body h4 {
+    color: #7F686B;
+    font-size: 2.5vw; }
+  body p {
+    font-family: "Muli", sans-serif;
+    font-size: 2vw;
+    color: #b28860;
+    text-align: center; }
+  body a {
+    text-decoration: none;
+    color: #3b65cc; }
+    body a:hover {
+      text-decoration: none;
+      color: #d2f0ff; }
+  body .contact {
+    display: none; }
+  body .me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    font-family: "Roboto Condensed", sans-serif; }
+    body .me .name {
+      margin: .2em auto .2em auto;
+      text-align: center;
+      color: #d2f0ff;
+      font-size: 12vw;
+      text-shadow: 1px 1px #ffd0d6, 2px 2px #ffd0d6, 3px 3px #ffd0d6, 4px 4px #ffd0d6, 5px 5px #ffd0d6; }
+    body .me .job {
+      text-align: center;
+      margin: .2em auto .4em auto;
+      text-shadow: none;
+      color: #ffd0d6;
+      font-size: 4.3vw;
+      font-style: italic;
+      font-family: "Aleo", serif;
+      border-bottom: solid 0.1em #d2f0ff; }
+  body .paper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 70%;
+    padding: 1em;
+    background-color: #ffd0d6;
+    border-radius: 5px;
+    box-shadow: #d2f0ff 4px 4px, #ffd0d6 8px 8px, #d2f0ff 12px 12px, #ffd0d6 16px 16px; }
+    body .paper .about {
+      margin: 0 auto; }
+    body .paper section {
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      body .paper section .xp {
+        display: flex; }
+        body .paper section .xp .education {
+          flex: 50%;
+          border-right: solid #3b65cc 0.1em; }
+        body .paper section .xp .work {
+          flex: 50%; }
+      body .paper section .skill {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        body .paper section .skill h3 {
+          flex: 100%;
+          border: solid .07em;
+          margin: 0 auto; }
+        body .paper section .skill div {
+          display: flex; }
+          body .paper section .skill div p {
+            flex: 50%; }
+          body .paper section .skill div .point {
+            flex: 50%;
+            color: #3b65cc; }
+        body .paper section .skill .front {
+          display: flex;
+          flex-flow: column;
+          order: 1;
+          flex: 100%; }
+        body .paper section .skill .back {
+          display: flex;
+          flex-flow: column;
+          order: 2;
+          flex: 100%; }
+        body .paper section .skill .tool {
+          order: 3;
+          flex: 100%; }
+
+/*# sourceMappingURL=main.css.map */
