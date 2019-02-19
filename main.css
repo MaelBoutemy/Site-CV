@@ -16,7 +16,8 @@ body {
   body h4 {
     color: #7F686B;
     font-size: 2.5vw; }
-  body p {
+  body p,
+  body span {
     font-family: "Muli", sans-serif;
     font-size: 2vw;
     color: #b28860;
@@ -79,7 +80,8 @@ body {
         body .paper section .skill h3 {
           flex: 100%;
           border: solid .07em;
-          margin: 0 auto; }
+          margin: 0 auto;
+          padding: .1em 0 .3em 0; }
         body .paper section .skill div {
           display: flex; }
           body .paper section .skill div p {
@@ -100,5 +102,15 @@ body {
         body .paper section .skill .tool {
           order: 3;
           flex: 100%; }
+      body .paper section .interest {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: flex-start;
+        width: 60%; }
+        body .paper section .interest h3 {
+          flex: 100%; }
+        body .paper section .interest span {
+          flex: 33%;
+          line-height: 1.7em; }
 
 /*# sourceMappingURL=main.css.map */

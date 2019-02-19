@@ -27,7 +27,8 @@ body {
         color: $gray;
         font-size: 2.5vw;
     }
-    p {
+    p,
+    span {
         font-family: $text;
         font-size: 2vw;
         color: $brown;
@@ -109,7 +110,8 @@ body {
                  h3 {
                      flex: 100%;
                      border: solid .07em;
-                     margin: 0 auto;                    
+                     margin: 0 auto;      
+                     padding: .1em 0 .3em 0;              
                  }
                  div{
                      display: flex;
@@ -140,7 +142,17 @@ body {
              }
      
              .interest {
-     
+                display: flex;
+                flex-flow: wrap;
+                justify-content: flex-start;
+                width: 60%;
+                h3 {
+                    flex: 100%;
+                }
+                span {
+                    flex: 33%;
+                    line-height: 1.7em;
+                }
              }
         }
         
