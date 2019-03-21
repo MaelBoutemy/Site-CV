@@ -6,27 +6,27 @@ body {
     align-items: center;
     margin: 0;
     margin-bottom: 10%;
-    background-color: $darkBlue;
+    background-color: $smooth;
     h3,
     h4 {
         font-family: $subtitle;
         text-align: center;
     }
     h3 {
-        color: $darkBlue;
+        color: $sun;
         font-size: 1.5em;
-        text-shadow: 1px 1px $blue,
-        2px 2px $blue,
-        3px 3px $blue,
-        4px 4px $blue,
-        5px 5px $blue;
+        text-shadow: 1px 1px $sun,
+        2px 2px $smooth,
+        3px 3px $smooth,
+        4px 4px $smooth,
+        5px 5px $smooth;
 
     @media screen and (min-width: $landscape){
         font-size: 2em;
     }
     }
     h4 {
-        color: $gray;
+        color: $sun;
         font-size: 1.3em;
 
     @media screen and (min-width: $landscape){
@@ -36,7 +36,7 @@ body {
     p,
     span {
         font-family: $text;
-        color: $brown;
+        color: $white;
         text-align: center;
 
     @media screen and (min-width: $landscape){
@@ -46,11 +46,11 @@ body {
     a {
         font-family: $text;
         text-decoration: none;
-        color: $darkBlue;
+        color: $smooth;
         &:hover{
             font-family: $text;
             text-decoration: none;
-            color: $blue;
+            color: $smooth;
         }
     }
 
@@ -72,13 +72,13 @@ body {
         .name{
             margin: .2em auto .2em auto;
             text-align: center;
-            color: $blue;
+            color: $sun;
             font-size: 3.5em;
-            text-shadow: 1px 1px $pink,
-                        2px 2px $pink,
-                        3px 3px $pink,
-                        4px 4px $pink,
-                        5px 5px $pink;
+            text-shadow: 1px 1px $dark,
+                        2px 2px $dark,
+                        3px 3px $dark,
+                        4px 4px $dark,
+                        5px 5px $dark;
         @media screen and (max-width: $landscape){
             font-size: 2.5em;
         }
@@ -93,11 +93,11 @@ body {
             text-align: center;
             margin:.2em auto .4em auto;
             text-shadow: none;
-            color: $pink;
+            color: $dark;
             font-size: 1.3em;
             font-style: italic;
             font-family: $subtitle;
-            border-bottom: solid .1em $blue;
+            border-bottom: solid .1em $sun;
 
         @media screen and (min-width: $landscape){
             font-size: 1.5em;
@@ -119,12 +119,18 @@ body {
         width: 85%;
         max-width: 900px;
         padding: 1em;
-        background-color: $pink;
+        background-color: $dark;
         border-radius: 5px;
-        box-shadow: $blue 4px 4px, 
-                    $pink 8px 8px,
-                    $blue 12px 12px,
-                    $pink 16px 16px;
+        box-shadow: $sun 2px 2px,
+                    $sun 4px 4px,
+                    $sun 6px 6px,
+                    $dark 8px 8px,
+                    $sun 10px 10px,
+                    $sun 12px 12px, 
+                    $sun 14px 14px, 
+                    $dark 16px 16px,
+                    $sun 18px 18px,
+                    $sun 20px 20px;
 
     @media screen and (min-width: $tablet){
         width: 70%;
@@ -141,7 +147,7 @@ body {
                 .education {
                     flex: 50%;
                     padding: 10px;
-                    border-right: solid $darkBlue 1px;      
+                    border-right: solid $sun 1px;      
                 }
                 .work {
                     padding: 10px;
@@ -174,7 +180,7 @@ body {
                      .dot{
                          flex: 50%;
                          font-size: 1.5em;
-                         color: $darkBlue;
+                         color: $sun;
                          margin: 0;
                     @media screen and (min-width: $landscape){
 
@@ -222,12 +228,12 @@ body {
           }
         } 
         .print{
-            border: 1px solid $darkBlue;
+            border: 1px solid $smooth;
             border-radius: 5px;
             padding: 5px 10px;
             &:hover{
-                background-color: $darkBlue;
-                border: 1px solid $blue;
+                background-color: $sun;
+                border: 1px solid $smooth;
             }
         }
     }

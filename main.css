@@ -4,20 +4,20 @@ body {
   align-items: center;
   margin: 0;
   margin-bottom: 10%;
-  background-color: #3b65cc; }
+  background-color: #4993a3; }
   body h3,
   body h4 {
     font-family: "Aleo", serif;
     text-align: center; }
   body h3 {
-    color: #3b65cc;
+    color: #ffdb42;
     font-size: 1.5em;
-    text-shadow: 1px 1px #d2f0ff, 2px 2px #d2f0ff, 3px 3px #d2f0ff, 4px 4px #d2f0ff, 5px 5px #d2f0ff; }
+    text-shadow: 1px 1px #ffdb42, 2px 2px #4993a3, 3px 3px #4993a3, 4px 4px #4993a3, 5px 5px #4993a3; }
     @media screen and (min-width: 480px) {
       body h3 {
         font-size: 2em; } }
   body h4 {
-    color: #7F686B;
+    color: #ffdb42;
     font-size: 1.3em; }
     @media screen and (min-width: 480px) {
       body h4 {
@@ -25,7 +25,7 @@ body {
   body p,
   body span {
     font-family: "Muli", sans-serif;
-    color: #b28860;
+    color: #f3f2ee;
     text-align: center; }
     @media screen and (min-width: 480px) {
       body p,
@@ -34,11 +34,11 @@ body {
   body a {
     font-family: "Muli", sans-serif;
     text-decoration: none;
-    color: #3b65cc; }
+    color: #4993a3; }
     body a:hover {
       font-family: "Muli", sans-serif;
       text-decoration: none;
-      color: #d2f0ff; }
+      color: #4993a3; }
   body .contact {
     display: none; }
   body .me {
@@ -52,9 +52,9 @@ body {
     body .me .name {
       margin: .2em auto .2em auto;
       text-align: center;
-      color: #d2f0ff;
+      color: #ffdb42;
       font-size: 3.5em;
-      text-shadow: 1px 1px #ffd0d6, 2px 2px #ffd0d6, 3px 3px #ffd0d6, 4px 4px #ffd0d6, 5px 5px #ffd0d6; }
+      text-shadow: 1px 1px #40506d, 2px 2px #40506d, 3px 3px #40506d, 4px 4px #40506d, 5px 5px #40506d; }
       @media screen and (max-width: 480px) {
         body .me .name {
           font-size: 2.5em; } }
@@ -68,11 +68,11 @@ body {
       text-align: center;
       margin: .2em auto .4em auto;
       text-shadow: none;
-      color: #ffd0d6;
+      color: #40506d;
       font-size: 1.3em;
       font-style: italic;
       font-family: "Aleo", serif;
-      border-bottom: solid 0.1em #d2f0ff; }
+      border-bottom: solid 0.1em #ffdb42; }
       @media screen and (min-width: 480px) {
         body .me .job {
           font-size: 1.5em; } }
@@ -86,9 +86,9 @@ body {
     width: 85%;
     max-width: 900px;
     padding: 1em;
-    background-color: #ffd0d6;
+    background-color: #40506d;
     border-radius: 5px;
-    box-shadow: #d2f0ff 4px 4px, #ffd0d6 8px 8px, #d2f0ff 12px 12px, #ffd0d6 16px 16px; }
+    box-shadow: #ffdb42 2px 2px, #ffdb42 4px 4px, #ffdb42 6px 6px, #40506d 8px 8px, #ffdb42 10px 10px, #ffdb42 12px 12px, #ffdb42 14px 14px, #40506d 16px 16px, #ffdb42 18px 18px, #ffdb42 20px 20px; }
     @media screen and (min-width: 960px) {
       body .paper {
         width: 70%; } }
@@ -103,7 +103,7 @@ body {
         body .paper section .xp .education {
           flex: 50%;
           padding: 10px;
-          border-right: solid #3b65cc 1px; }
+          border-right: solid #ffdb42 1px; }
         body .paper section .xp .work {
           padding: 10px;
           flex: 50%; }
@@ -130,7 +130,7 @@ body {
           body .paper section .skill div .dot {
             flex: 50%;
             font-size: 1.5em;
-            color: #3b65cc;
+            color: #ffdb42;
             margin: 0; }
         body .paper section .skill .front {
           display: flex;
@@ -162,11 +162,11 @@ body {
         body .paper section .interest .interest5 {
           flex: 33%; }
     body .paper .print {
-      border: 1px solid #3b65cc;
+      border: 1px solid #4993a3;
       border-radius: 5px;
       padding: 5px 10px; }
       body .paper .print:hover {
-        background-color: #3b65cc;
-        border: 1px solid #d2f0ff; }
+        background-color: #ffdb42;
+        border: 1px solid #4993a3; }
 
 /*# sourceMappingURL=main.css.map */
