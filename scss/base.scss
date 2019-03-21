@@ -1,5 +1,4 @@
 @import 'variables.scss';
-@import 'smallResolution.scss';
 
 body {
     display: flex;
@@ -15,68 +14,109 @@ body {
     }
     h3 {
         color: $darkBlue;
-        font-size: 3.5vw; 
-        
+        font-size: 1.5em;
         text-shadow: 1px 1px $blue,
         2px 2px $blue,
         3px 3px $blue,
         4px 4px $blue,
         5px 5px $blue;
+
+    @media screen and (min-width: $landscape){
+        font-size: 2em;
+    }
     }
     h4 {
         color: $gray;
-        font-size: 2.5vw;
+        font-size: 1.3em;
+
+    @media screen and (min-width: $landscape){
+            font-size: 1.5em;
+    }
     }
     p {
         font-family: $text;
-        font-size: 2vw;
         color: $brown;
         text-align: center;
+
+    @media screen and (min-width: $landscape){
+        font-size: 1.2em;
+    }
     }
     a {
+        font-family: $text;
         text-decoration: none;
         color: $darkBlue;
         &:hover{
+            font-family: $text;
             text-decoration: none;
             color: $blue;
         }
     }
+
+
+
+    // ----- Header -----
     .contact {
         display: none;
         }
     .me {
         display: flex;
-        flex-wrap: wrap;
-        width: 90%;
+        flex-flow: column;
+        width: 100%;
         font-family: $title;
 
+    @media screen and (min-width: $landscape){
+        width: 90%;
+    }
         .name{
             margin: .2em auto .2em auto;
             text-align: center;
             color: $blue;
-            font-size: 12vw;
+            font-size: 3.5em;
             text-shadow: 1px 1px $pink,
                         2px 2px $pink,
                         3px 3px $pink,
                         4px 4px $pink,
                         5px 5px $pink;
+        @media screen and (max-width: $landscape){
+            font-size: 2.5em;
+        }
+        @media screen and (min-width: $landscape){
+            font-size: 3.8em;
+        }
+        @media screen and (min-width: $tablet){
+            font-size: 5em;
+        }
         }
         .job {
             text-align: center;
             margin:.2em auto .4em auto;
             text-shadow: none;
             color: $pink;
-            font-size: 4.3vw;
+            font-size: 1.3em;
             font-style: italic;
             font-family: $subtitle;
             border-bottom: solid .1em $blue;
+
+        @media screen and (min-width: $landscape){
+            font-size: 1.5em;
+        }
+        @media screen and (min-width: $tablet){
+            font-size: 2em;
+        }
         }
     }
+
+
+
+
+    // ----- Content -----
     .paper {
         display: flex;
         flex-flow: column;
         align-items: center;
-        width: 70%;
+        width: 85%;
+        max-width: 900px;
         padding: 1em;
         background-color: $pink;
         border-radius: 5px;
@@ -84,6 +124,10 @@ body {
                     $pink 8px 8px,
                     $blue 12px 12px,
                     $pink 16px 16px;
+
+    @media screen and (min-width: $tablet){
+        width: 70%;
+    }
         .about {
             margin: 0 auto;
         }
@@ -95,10 +139,15 @@ body {
                 display: flex;
                 .education {
                     flex: 50%;
-                    border-right: solid $darkBlue .1em;               
+                    padding: 10px;
+                    border-right: solid $darkBlue 1px;      
                 }
                 .work {
+                    padding: 10px;
                     flex: 50%;
+                    h4 {
+                        margin-top: 75px;
+                    }
                 }
              }
              .skill {
@@ -108,17 +157,27 @@ body {
                  justify-content: center;
                  h3 {
                      flex: 100%;
-                     border: solid .07em;
-                     margin: 0 auto;                    
+                     border: solid 1px;
+                     border-radius: 5px;
+                     padding: 5px 0;
+                     margin: auto;
                  }
                  div{
                      display: flex;
                      p {
                          flex: 50%;
+                         height: 46px;
+                         line-height: 46px;
+                         margin: 0;
                      }
-                     .point{
+                     .dot{
                          flex: 50%;
+                         font-size: 1.5em;
                          color: $darkBlue;
+                         margin: 0;
+                    @media screen and (min-width: $landscape){
+
+                    }
                      }
                  }
                  .front {
@@ -136,13 +195,39 @@ body {
                  .tool {
                      order: 3;
                      flex: 100%;
+                     align-items: center;
+                     p {
+                         display: block;
+                     }
                  }
              }
      
              .interest {
-     
-             }
+                 display: flex;
+                 flex-flow: row wrap;
+                 padding: 0 30px 0 30px;
+                 h3 {
+                     flex: 100%;
+                 }
+                .interest1,
+                .interest2{
+                    flex: 50%;
+                }
+                .interest3,
+                .interest4,
+                .interest5{
+                    flex: 33%;
+                }
+          }
+        } 
+        .print{
+            border: 1px solid $darkBlue;
+            border-radius: 5px;
+            padding: 5px 10px;
+            &:hover{
+                background-color: $darkBlue;
+                border: 1px solid $blue;
+            }
         }
-        
     }
 }

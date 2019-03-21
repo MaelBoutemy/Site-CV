@@ -11,53 +11,85 @@ body {
     text-align: center; }
   body h3 {
     color: #3b65cc;
-    font-size: 3.5vw;
+    font-size: 1.5em;
     text-shadow: 1px 1px #d2f0ff, 2px 2px #d2f0ff, 3px 3px #d2f0ff, 4px 4px #d2f0ff, 5px 5px #d2f0ff; }
+    @media screen and (min-width: 480px) {
+      body h3 {
+        font-size: 2em; } }
   body h4 {
     color: #7F686B;
-    font-size: 2.5vw; }
+    font-size: 1.3em; }
+    @media screen and (min-width: 480px) {
+      body h4 {
+        font-size: 1.5em; } }
   body p {
     font-family: "Muli", sans-serif;
-    font-size: 2vw;
     color: #b28860;
     text-align: center; }
+    @media screen and (min-width: 480px) {
+      body p {
+        font-size: 1.2em; } }
   body a {
+    font-family: "Muli", sans-serif;
     text-decoration: none;
     color: #3b65cc; }
     body a:hover {
+      font-family: "Muli", sans-serif;
       text-decoration: none;
       color: #d2f0ff; }
   body .contact {
     display: none; }
   body .me {
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
+    flex-flow: column;
+    width: 100%;
     font-family: "Roboto Condensed", sans-serif; }
+    @media screen and (min-width: 480px) {
+      body .me {
+        width: 90%; } }
     body .me .name {
       margin: .2em auto .2em auto;
       text-align: center;
       color: #d2f0ff;
-      font-size: 12vw;
+      font-size: 3.5em;
       text-shadow: 1px 1px #ffd0d6, 2px 2px #ffd0d6, 3px 3px #ffd0d6, 4px 4px #ffd0d6, 5px 5px #ffd0d6; }
+      @media screen and (max-width: 480px) {
+        body .me .name {
+          font-size: 2.5em; } }
+      @media screen and (min-width: 480px) {
+        body .me .name {
+          font-size: 3.8em; } }
+      @media screen and (min-width: 960px) {
+        body .me .name {
+          font-size: 5em; } }
     body .me .job {
       text-align: center;
       margin: .2em auto .4em auto;
       text-shadow: none;
       color: #ffd0d6;
-      font-size: 4.3vw;
+      font-size: 1.3em;
       font-style: italic;
       font-family: "Aleo", serif;
       border-bottom: solid 0.1em #d2f0ff; }
+      @media screen and (min-width: 480px) {
+        body .me .job {
+          font-size: 1.5em; } }
+      @media screen and (min-width: 960px) {
+        body .me .job {
+          font-size: 2em; } }
   body .paper {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 70%;
+    width: 85%;
+    max-width: 900px;
     padding: 1em;
     background-color: #ffd0d6;
     border-radius: 5px;
     box-shadow: #d2f0ff 4px 4px, #ffd0d6 8px 8px, #d2f0ff 12px 12px, #ffd0d6 16px 16px; }
+    @media screen and (min-width: 960px) {
+      body .paper {
+        width: 70%; } }
     body .paper .about {
       margin: 0 auto; }
     body .paper section {
@@ -68,9 +100,13 @@ body {
         display: flex; }
         body .paper section .xp .education {
           flex: 50%;
-          border-right: solid #3b65cc 0.1em; }
+          padding: 10px;
+          border-right: solid #3b65cc 1px; }
         body .paper section .xp .work {
+          padding: 10px;
           flex: 50%; }
+          body .paper section .xp .work h4 {
+            margin-top: 75px; }
       body .paper section .skill {
         width: 70%;
         display: flex;
@@ -78,15 +114,22 @@ body {
         justify-content: center; }
         body .paper section .skill h3 {
           flex: 100%;
-          border: solid .07em;
-          margin: 0 auto; }
+          border: solid 1px;
+          border-radius: 5px;
+          padding: 5px 0;
+          margin: auto; }
         body .paper section .skill div {
           display: flex; }
           body .paper section .skill div p {
-            flex: 50%; }
-          body .paper section .skill div .point {
             flex: 50%;
-            color: #3b65cc; }
+            height: 46px;
+            line-height: 46px;
+            margin: 0; }
+          body .paper section .skill div .dot {
+            flex: 50%;
+            font-size: 1.5em;
+            color: #3b65cc;
+            margin: 0; }
         body .paper section .skill .front {
           display: flex;
           flex-flow: column;
@@ -99,6 +142,29 @@ body {
           flex: 100%; }
         body .paper section .skill .tool {
           order: 3;
+          flex: 100%;
+          align-items: center; }
+          body .paper section .skill .tool p {
+            display: block; }
+      body .paper section .interest {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 30px 0 30px; }
+        body .paper section .interest h3 {
           flex: 100%; }
+        body .paper section .interest .interest1,
+        body .paper section .interest .interest2 {
+          flex: 50%; }
+        body .paper section .interest .interest3,
+        body .paper section .interest .interest4,
+        body .paper section .interest .interest5 {
+          flex: 33%; }
+    body .paper .print {
+      border: 1px solid #3b65cc;
+      border-radius: 5px;
+      padding: 5px 10px; }
+      body .paper .print:hover {
+        background-color: #3b65cc;
+        border: 1px solid #d2f0ff; }
 
 /*# sourceMappingURL=main.css.map */

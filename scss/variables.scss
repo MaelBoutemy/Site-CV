@@ -5,6 +5,17 @@ $darkBlue: #3b65cc;
 $brown: #b28860;
 $gray: #7F686B;
 
+// Variables media query
+// 480px | 960px ou 1024px ( selon votre design )  | 1281px
+
+// De 480px à 959px : smartphone en paysage, tablette en portrait et petite tablette en paysage
+$landscape: 480px;
+// De 960px à 1280px : tablette en paysage, écran d’ordinateur de taille petite et moyenne
+$tablet: 960px;
+// 1281px et au delà : grand écran d’ordinateur (21″ et + en plein écran )
+$fullScreen: 1280px;
+
+
 //Variables des fonts
 
 // Roboto: font pour les gros titres !
