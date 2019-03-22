@@ -1,248 +1,86 @@
 @import 'variables.scss';
 
-body {
+body{ margin: 0; overflow-y: hidden;}
+
+.me {
     display: flex;
+    justify-content: center;
     flex-flow: column;
-    align-items: center;
-    margin: 0;
-    padding-bottom: 10%;
-    background-color: $smooth;
-    h3,
-    h4 {
-        font-family: $subtitle;
+    background-color: #393e4b;
+    width: 100%;
+    height: 100vh;
+    .name {
+        position: relative;
         text-align: center;
-    }
-    h3 {
-        color: $sun;
-        font-size: 1.5em;
-        text-shadow: 1px 1px $sun,
-        2px 2px $smooth,
-        3px 3px $smooth,
-        4px 4px $smooth,
-        5px 5px $smooth;
-
-    @media screen and (min-width: $landscape){
-        font-size: 2em;
-    }
-    }
-    h4 {
-        color: $sun;
-        font-size: 1.3em;
-
-    @media screen and (min-width: $landscape){
-            font-size: 1.5em;
-    }
-    }
-    p,
-    span {
-        font-family: $text;
-        color: $white;
-        text-align: center;
-
-    @media screen and (min-width: $landscape){
-        font-size: 1.2em;
-    }
-    }
-    a {
-        font-family: $text;
-        text-decoration: none;
-        color:$sun;
-        &:hover{
-            font-family: $text;
-            text-decoration: none;
-            color: $white;
-        }
-    }
-
-
-
-    // ----- Header -----
-    .contact {
-        height: 35px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        background-color: $dark;
-        opacity: .9;
-        box-shadow: 0 -5px 5px $sun;
-        }
-    .me {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
+        margin: 0;
         font-family: $title;
-
-    @media screen and (min-width: $landscape){
-        width: 90%;
-    }
-        .name{
-            margin: .2em auto .2em auto;
-            text-align: center;
-            color: $sun;
-            font-size: 3.5em;
-            text-shadow: 1px 1px $dark,
-                        2px 2px $dark,
-                        3px 3px $dark,
-                        4px 4px $dark,
-                        5px 5px $dark;
-        @media screen and (max-width: $landscape){
-            font-size: 2.5em;
+        font-size: 8em;
+        color: $dark;
+        text-shadow:    1px -1px $sun,
+                        2px -2px $sun,
+                        3px -3px $sun,
+                        -1px 1px $smooth,
+                        -2px 2px $smooth,
+                        -3px 3px $smooth;
+        animation: name 2s linear forwards;
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: $sun;
+            height: 5px;
+            width: 100%;
+            border-radius: 0 5px 5px 0;
+            top: 100%;
+            left: -105%;
+            animation: slide 2.5s cubic-bezier(.38,.55,.65,.66) forwards
         }
-        @media screen and (min-width: $landscape){
-            font-size: 3.8em;
+    @keyframes name {
+        from {
+            opacity: 0;
+            transform: scale(.98);
         }
-        @media screen and (min-width: $tablet){
-            font-size: 5em;
-        }
-        }
-        .job {
-            text-align: center;
-            margin:.2em auto .4em auto;
-            text-shadow: none;
-            color: $dark;
-            font-size: 1.3em;
-            font-style: italic;
-            font-family: $subtitle;
-            border-bottom: solid .1em $sun;
-
-        @media screen and (min-width: $landscape){
-            font-size: 1.5em;
-        }
-        @media screen and (min-width: $tablet){
-            font-size: 2em;
-        }
+        to {
+            transform: scale(1)
         }
     }
-
-
-
-
-    // ----- Content -----
-    .paper {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        width: 85%;
-        max-width: 900px;
-        height: calc(100% - 60px);
-        padding: 1em;
-        background-color: $dark;
-        border-radius: 5px;
-        box-shadow: $sun 2px 2px,
-                    $sun 4px 4px,
-                    $sun 6px 6px,
-                    $dark 8px 8px,
-                    $sun 10px 10px,
-                    $sun 12px 12px, 
-                    $sun 14px 14px, 
-                    $dark 16px 16px,
-                    $sun 18px 18px,
-                    $sun 20px 20px;
-
-    @media screen and (min-width: $tablet){
-        width: 70%;
-    }
-        .about {
-            margin: 0 auto;
+    @keyframes slide {
+        from {
         }
-        section {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            .xp {
-                display: flex;
-                .education {
-                    flex: 50%;
-                    padding: 10px;
-                    border-right: solid $sun 1px;      
-                }
-                .work {
-                    padding: 10px;
-                    flex: 50%;
-                    h4 {
-                        margin-top: 75px;
-                    }
-                }
-             }
-             .skill {
-                 width: 70%;
-                 display: flex;
-                 flex-wrap: wrap;
-                 justify-content: center;
-                 h3 {
-                     flex: 100%;
-                     border: solid 1px;
-                     border-radius: 5px;
-                     padding: 5px 0;
-                     margin: auto;
-                 }
-                 div{
-                     display: flex;
-                     p {
-                         flex: 50%;
-                         height: 46px;
-                         line-height: 46px;
-                         margin: 0;
-                     }
-                     .dot{
-                         flex: 50%;
-                         font-size: 1.5em;
-                         color: $sun;
-                         margin: 0;
-                     }
-                 }
-                 .front {
-                     display: flex;
-                     flex-flow: column;
-                     order: 1;
-                     flex: 100%;
-                 }
-                 .back {
-                     display: flex;
-                     flex-flow: column;
-                     order: 2;
-                     flex: 100%;
-                 }
-                 .tool {
-                     order: 3;
-                     flex: 100%;
-                     align-items: center;
-                     p {
-                         display: block;
-                     }
-                 }
-             }
-     
-             .interest {
-                 display: flex;
-                 flex-flow: row wrap;
-                 padding: 0 30px 0 30px;
-                 h3 {
-                     flex: 100%;
-                 }
-                .interest1,
-                .interest2{
-                    flex: 50%;
-                }
-                .interest3,
-                .interest4,
-                .interest5{
-                    flex: 33%;
-                }
-          }
-        } 
-        .print{
-            border: 1px solid $smooth;
-            border-radius: 5px;
-            padding: 5px 10px;
-            &:hover{
-                background-color: $sun;
-                color: $smooth;
-                border: 1px solid $smooth;
-            }
+        to {
+            left: -10%;
+        }
+    }
+    }
+    .job {
+        align-self: center;
+        opacity: 0;
+        font-family: $subtitle;
+        color: $smooth;
+        font-size: 2.5em;
+        animation: job 2s ease-in forwards;
+        animation-delay: 1s;
+    @keyframes job {
+        from {
+            margin-left: 5%;
+            opacity: 0;
+        }
+        to {
+            transform: translateX(auto);
+            opacity: 1;
+            
+        }
+    } 
+    }
+    #button {
+        position: absolute;
+        right: 0;
+        top: 46.3%;
+        width: 100px;
+        height: 100px;
+        opacity: .6;
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
         }
     }
 }

@@ -1,183 +1,66 @@
 body {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   margin: 0;
-  padding-bottom: 10%;
-  background-color: #4993a3; }
-  body h3,
-  body h4 {
+  overflow-y: hidden; }
+
+.me {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  background-color: #393e4b;
+  width: 100%;
+  height: 100vh; }
+  .me .name {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 8em;
+    color: #393e4b;
+    text-shadow: 1px -1px #ffdb42, 2px -2px #ffdb42, 3px -3px #ffdb42, -1px 1px #ff936a, -2px 2px #ff936a, -3px 3px #ff936a;
+    animation: name 2s linear forwards; }
+    .me .name:after {
+      position: absolute;
+      content: "";
+      background-color: #ffdb42;
+      height: 5px;
+      width: 100%;
+      border-radius: 0 5px 5px 0;
+      top: 100%;
+      left: -105%;
+      animation: slide 2.5s cubic-bezier(0.38, 0.55, 0.65, 0.66) forwards; }
+@keyframes name {
+  from {
+    opacity: 0;
+    transform: scale(0.98); }
+  to {
+    transform: scale(1); } }
+@keyframes slide {
+  to {
+    left: -10%; } }
+  .me .job {
+    align-self: center;
+    opacity: 0;
     font-family: "Aleo", serif;
-    text-align: center; }
-  body h3 {
-    color: #ffdb42;
-    font-size: 1.5em;
-    text-shadow: 1px 1px #ffdb42, 2px 2px #4993a3, 3px 3px #4993a3, 4px 4px #4993a3, 5px 5px #4993a3; }
-    @media screen and (min-width: 480px) {
-      body h3 {
-        font-size: 2em; } }
-  body h4 {
-    color: #ffdb42;
-    font-size: 1.3em; }
-    @media screen and (min-width: 480px) {
-      body h4 {
-        font-size: 1.5em; } }
-  body p,
-  body span {
-    font-family: "Muli", sans-serif;
-    color: #f3f2ee;
-    text-align: center; }
-    @media screen and (min-width: 480px) {
-      body p,
-      body span {
-        font-size: 1.2em; } }
-  body a {
-    font-family: "Muli", sans-serif;
-    text-decoration: none;
-    color: #ffdb42; }
-    body a:hover {
-      font-family: "Muli", sans-serif;
-      text-decoration: none;
-      color: #f3f2ee; }
-  body .contact {
-    height: 35px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    background-color: #40506d;
-    opacity: .9;
-    box-shadow: 0 -5px 5px #ffdb42; }
-  body .me {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    font-family: "Roboto Condensed", sans-serif; }
-    @media screen and (min-width: 480px) {
-      body .me {
-        width: 90%; } }
-    body .me .name {
-      margin: .2em auto .2em auto;
-      text-align: center;
-      color: #ffdb42;
-      font-size: 3.5em;
-      text-shadow: 1px 1px #40506d, 2px 2px #40506d, 3px 3px #40506d, 4px 4px #40506d, 5px 5px #40506d; }
-      @media screen and (max-width: 480px) {
-        body .me .name {
-          font-size: 2.5em; } }
-      @media screen and (min-width: 480px) {
-        body .me .name {
-          font-size: 3.8em; } }
-      @media screen and (min-width: 960px) {
-        body .me .name {
-          font-size: 5em; } }
-    body .me .job {
-      text-align: center;
-      margin: .2em auto .4em auto;
-      text-shadow: none;
-      color: #40506d;
-      font-size: 1.3em;
-      font-style: italic;
-      font-family: "Aleo", serif;
-      border-bottom: solid 0.1em #ffdb42; }
-      @media screen and (min-width: 480px) {
-        body .me .job {
-          font-size: 1.5em; } }
-      @media screen and (min-width: 960px) {
-        body .me .job {
-          font-size: 2em; } }
-  body .paper {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 85%;
-    max-width: 900px;
-    height: calc(100% - 60px);
-    padding: 1em;
-    background-color: #40506d;
-    border-radius: 5px;
-    box-shadow: #ffdb42 2px 2px, #ffdb42 4px 4px, #ffdb42 6px 6px, #40506d 8px 8px, #ffdb42 10px 10px, #ffdb42 12px 12px, #ffdb42 14px 14px, #40506d 16px 16px, #ffdb42 18px 18px, #ffdb42 20px 20px; }
-    @media screen and (min-width: 960px) {
-      body .paper {
-        width: 70%; } }
-    body .paper .about {
-      margin: 0 auto; }
-    body .paper section {
-      display: flex;
-      flex-flow: column;
-      align-items: center; }
-      body .paper section .xp {
-        display: flex; }
-        body .paper section .xp .education {
-          flex: 50%;
-          padding: 10px;
-          border-right: solid #ffdb42 1px; }
-        body .paper section .xp .work {
-          padding: 10px;
-          flex: 50%; }
-          body .paper section .xp .work h4 {
-            margin-top: 75px; }
-      body .paper section .skill {
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; }
-        body .paper section .skill h3 {
-          flex: 100%;
-          border: solid 1px;
-          border-radius: 5px;
-          padding: 5px 0;
-          margin: auto; }
-        body .paper section .skill div {
-          display: flex; }
-          body .paper section .skill div p {
-            flex: 50%;
-            height: 46px;
-            line-height: 46px;
-            margin: 0; }
-          body .paper section .skill div .dot {
-            flex: 50%;
-            font-size: 1.5em;
-            color: #ffdb42;
-            margin: 0; }
-        body .paper section .skill .front {
-          display: flex;
-          flex-flow: column;
-          order: 1;
-          flex: 100%; }
-        body .paper section .skill .back {
-          display: flex;
-          flex-flow: column;
-          order: 2;
-          flex: 100%; }
-        body .paper section .skill .tool {
-          order: 3;
-          flex: 100%;
-          align-items: center; }
-          body .paper section .skill .tool p {
-            display: block; }
-      body .paper section .interest {
-        display: flex;
-        flex-flow: row wrap;
-        padding: 0 30px 0 30px; }
-        body .paper section .interest h3 {
-          flex: 100%; }
-        body .paper section .interest .interest1,
-        body .paper section .interest .interest2 {
-          flex: 50%; }
-        body .paper section .interest .interest3,
-        body .paper section .interest .interest4,
-        body .paper section .interest .interest5 {
-          flex: 33%; }
-    body .paper .print {
-      border: 1px solid #4993a3;
-      border-radius: 5px;
-      padding: 5px 10px; }
-      body .paper .print:hover {
-        background-color: #ffdb42;
-        color: #4993a3;
-        border: 1px solid #4993a3; }
+    color: #ff936a;
+    font-size: 2.5em;
+    animation: job 2s ease-in forwards;
+    animation-delay: 1s; }
+@keyframes job {
+  from {
+    margin-left: 5%;
+    opacity: 0; }
+  to {
+    transform: translateX(auto);
+    opacity: 1; } }
+  .me #button {
+    position: absolute;
+    right: 0;
+    top: 46.3%;
+    width: 100px;
+    height: 100px;
+    opacity: .6; }
+    .me #button:hover {
+      cursor: pointer;
+      opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
